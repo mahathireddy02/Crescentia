@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFFFF0; /* Ivory */
+  color: #333F63;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, #333F63, #000000d6);
+  padding: 10px 100px 10px 20px;
+}
+
+.college-logo {
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.nav-links a {
+  color: #FFFFF0;
+  text-decoration: none;
+  padding: 8px;
+  font-weight: 400;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #FFFFF0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.events-header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(to bottom, #333F63, #000000d6);
+  color: #FFFFF0;
+}
+
+.events-header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.events-header p {
+  font-size: 1.2em;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.event-card {
+  background: linear-gradient(to left, #333F63, #000000d6);
+  color: #FFFFF0;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.event-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.event-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.event-image {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.event-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-details p {
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+.register-btn {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #FFFFF0;
+  color: #333F63;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #333F63;
+  color: #FFFFF0;
+  border: 1px solid #FFFFF0;
+}
+
+.site-footer {
+  background: linear-gradient(to right, #333F63, #000000d6);
+  padding: 30px 20px;
+  color: #FFFFF0;
+  text-align: center;
+}
